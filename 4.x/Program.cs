@@ -6,13 +6,14 @@ namespace _4.x
     {
         static void Main(string[] args)
         {
+            int i = 0;
             while (true)
             {
-                
-                                               
+                Console.WriteLine(i++);
+
                 switch (Console.ReadLine())
                 {
-
+                    
                     case "red":
                         Console.BackgroundColor = ConsoleColor.Red;
                         Console.ForegroundColor = ConsoleColor.Black;

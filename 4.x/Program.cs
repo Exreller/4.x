@@ -6,9 +6,9 @@ namespace _4.x
     {
         static void Main(string[] args)
         {
-            for (int i = 1; i < 5; i++)
+            while (true)
             {
-                Console.WriteLine("Iteration {0}", i);
+                
                                                
                 switch (Console.ReadLine())
                 {

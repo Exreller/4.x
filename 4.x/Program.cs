@@ -52,9 +52,16 @@ namespace _4.x
             while (k < 3)
             {
                 Console.WriteLine("Напишите свой любимый цвет на английском, с маленькой буквы");
-                Console.WriteLine(k);          
+                Console.WriteLine(k);
 
-                switch (Console.ReadLine())
+                var text = Console.ReadLine();
+
+                if (text == "stop")
+                {
+                    Console.WriteLine("Цикл остановлен");
+                    break;
+                }
+                switch (text)
                 {
                     
                     case "red":
@@ -80,11 +87,7 @@ namespace _4.x
 
 
                     default:
-                        Console.BackgroundColor = ConsoleColor.Yellow;
-                        Console.ForegroundColor = ConsoleColor.Red;
-
-                        Console.WriteLine("Your color is Yellow!");
-                        break;
+                        continue;
 
                 }
 
